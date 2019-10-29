@@ -8,7 +8,7 @@ Clone this repo wherever and open using either eclipse or intellij (you can try 
 * **Quentin Tourette** - *Initial Work*
 
 ## Preview
-![Screenshot of the NEAT training](https://imgur.com/UYztbGv)
+![Screenshot of the NEAT training](https://i.imgur.com/UYztbGv.png)
 
 ## License
 
