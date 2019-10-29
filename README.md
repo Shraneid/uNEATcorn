@@ -14,4 +14,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Thanks to *Finn Eggers* from whom my code was inspired - see his YouTube channel [here](https://www.youtube.com/channel/UCaKAU8vQzS-_e5xt7NSK3Xw)
-* *Daniel Shiffman* [YouTube](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) who helped me a lot to understand the concepts
+* *Daniel Shiffman* his [YouTube](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) channel who helped me a lot to understand the concepts
