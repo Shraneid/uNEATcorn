@@ -19,7 +19,6 @@ public class Main {
         Dino d;
 
         env.CreateAndShowGUI();
-
         Frame f = new Frame(neat.getBestGenome());
 
         double[] in = new double[neat.getInputSize()];
@@ -69,6 +68,7 @@ public class Main {
             score = Math.max(neat.getBestScore(), score);
             System.out.println((double)i/MAX_EPOCHS*100f + "%");
 
+            //IF IT GETS BETTER THAN 95% OF MAXIMUM SCORE WE END TRAINING
             if (score > (double)env.MAX_SCORE * 0.95f){
                 System.out.println("BRAVO");
                 System.out.println("Finished in " + i + " epochs");
@@ -76,6 +76,8 @@ public class Main {
             }
         }
         neat.printSpecies();
+
+        //JUST RUNNING THE EVOLVED POPULATION OVER AND OVER WHEN TRAINING IS OVER
         while (true){
             env.reset();
             while (env.someAreAlive()) {
