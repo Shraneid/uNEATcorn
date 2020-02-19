@@ -2,13 +2,25 @@ package gym;
 
 import resource.Resource;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Obstacle {
 
-    private static BufferedImage image = new Resource().getResourceImage("/Cactus-1.png");
+    private static BufferedImage image;
+
+    static {
+        try {
+            image = ImageIO.read(new FileInputStream("resources/images/Cactus-1.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private static int pad = image.getHeight();
 
     private int x;

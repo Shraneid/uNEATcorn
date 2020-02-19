@@ -4,10 +4,12 @@ import neat.Client;
 import neat.Neat;
 import visual.Frame;
 
+import java.io.IOException;
+
 public class Main {
     private static final int MAX_EPOCHS = 500;
 
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException, IOException {
         Dino.loadImages();
         gym.World.setFPS(30);
 

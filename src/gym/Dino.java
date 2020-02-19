@@ -2,8 +2,12 @@ package gym;
 
 import resource.Resource;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -98,15 +102,15 @@ public class Dino {
         }
     }
 
-    public static void loadImages(){
-        gym.Dino.sprites.add(new Resource().getResourceImage("/walk1.png"));
-        gym.Dino.sprites.add(new Resource().getResourceImage("/walk2.png"));
-        gym.Dino.sprites.add(new Resource().getResourceImage("/walk3.png"));
-        gym.Dino.sprites.add(new Resource().getResourceImage("/walk4.png"));
-        gym.Dino.sprites.add(new Resource().getResourceImage("/walk5.png"));
-        gym.Dino.sprites.add(new Resource().getResourceImage("/walk6.png"));
-        gym.Dino.sprites.add(new Resource().getResourceImage("/walk7.png"));
-        gym.Dino.sprites.add(new Resource().getResourceImage("/walk8.png"));
-        gym.Dino.sprites.add(new Resource().getResourceImage("/walk9.png"));
+    public static void loadImages() throws IOException {
+        gym.Dino.sprites.add(ImageIO.read(new FileInputStream("resources/images/walk1.png")));
+        gym.Dino.sprites.add(ImageIO.read(new FileInputStream("resources/images/walk2.png")));
+        gym.Dino.sprites.add(ImageIO.read(new FileInputStream("resources/images/walk3.png")));
+        gym.Dino.sprites.add(ImageIO.read(new FileInputStream("resources/images/walk4.png")));
+        gym.Dino.sprites.add(ImageIO.read(new FileInputStream("resources/images/walk5.png")));
+        gym.Dino.sprites.add(ImageIO.read(new FileInputStream("resources/images/walk6.png")));
+        gym.Dino.sprites.add(ImageIO.read(new FileInputStream("resources/images/walk7.png")));
+        gym.Dino.sprites.add(ImageIO.read(new FileInputStream("resources/images/walk8.png")));
+        gym.Dino.sprites.add(ImageIO.read(new FileInputStream("resources/images/walk9.png")));
     }
 }

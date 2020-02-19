@@ -2,7 +2,6 @@ package genome;
 
 import data_structures.RandomHashSet;
 import neat.Neat;
-import org.omg.CORBA.ORBPackage.InconsistentTypeCode;
 
 public class Genome {
 
